@@ -5,8 +5,44 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page">
+      <h1 class="visually-hidden">Магазин техники "device"</h1>
+      <img class="logo" src="" alt="логотип сайта device"> <!-- device в макете как логотип, который нужно добавлять картинкой, 
+        или это текст-заголовок ?-->
+       <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <form action="https://echo.htmlacademy.ru/" method="get">
+            <input name="search" type="search" placeholder="Текст поиска">
+           <button type="submit">поиск</button> <!-- поисковая форма и кнопка идут как элемент списка
+          или надо их вынести за ul?-->
+          </form>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-user" href="#">Войти</a>
+          </li>
+          <li class="navigation-item ">
+            <a class="navigation-link navigation-user" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-user" href="#">Корзина</a>
+          </li>
+        </ul >
+        <ul class="navigation-list ">
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">каталог товаров</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">гарантия</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">контакты</a>
+        </li>
+        </ul>
+       </nav>
+    </header>
   </body>
 </html>
