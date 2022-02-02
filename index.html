@@ -7,15 +7,13 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Магазин техники "device"</h1>
-      <img class="logo" src="" alt="логотип сайта device"> <!-- device в макете как логотип, который нужно добавлять картинкой, 
-        или это текст-заголовок ?-->
+      <img class="logo" src="" alt="логотип сайта device">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <form action="https://echo.htmlacademy.ru/" method="get">
             <input class="navigation-field" name="search" type="search" placeholder="Текст поиска" required>   
-            <button type="submit">поиск</button> <!-- поисковая форма и кнопка идут как элемент списка
-          или надо их вынести за ul?-->
+            <button type="submit">поиск</button>
             </form>
           </li>
           <li class="navigation-item">
@@ -48,8 +46,7 @@
     <main class="main-page"> 
         <section class="product-examples">       
           <h2 class="visually-hidden">Примеры товаров</h2>
-            <b class="product-examples-numeration">01</b><!-- Что за цифры 01 в шапке? Это текст просто в шапке
-              или оно связано с тем, какой по счету товар мы видим--> 
+            <b class="product-examples-numeration">01</b>
             <img class="slider-image" src="" alt="Квадракоптер">
             <a class="slider-details" href="#">подробнее</a>
             <button class="slider-button button-prev" type="button">
@@ -93,7 +90,7 @@
       <section class="suggestions">
         <h2 class="visually-hidden">Категории техники</h2>
         <ul class="suggestions-list">
-          <li class="suggestions-item">   <!--Здесь же картинки?-->
+          <li class="suggestions-item">  
             <img src="" class="suggestions-image" alt="Очки виртуальной реальности">
             <p class="suggestion-name">Виртуальная реальность</p>
           </li>
@@ -122,21 +119,17 @@
       <section class="additional-information">
         <h2 class="visually-hidden">дополнительные сведения</h2>
         <ul class="additional-information-list">
-          <li class="additional-information-item"> <!-- Я правильно понимаю, что здесь кнопки? Из лайва не совсем было понятно, потому что 
-          например, чтобы добавить товар в корзину мы делаем ссылку, как сказал Андрей, потому что JS может не сработать,а
-          ссылка обязательно сработает с бекендом и товар добавится в корзину. А тогда не имеет ли смысл вставлять везде ссылки, потому что
-          JS будет отменять переход на новую страницу и будут даже попапы выскакивать будто по нажатию кнопки.
-           Можете объяснить/переобъяснить этот момент?-->
-            <button class="additional-information-button additional-information-button-current" type="button">доставка</button>
+          <li class="additional-information-item">
+            <a href="#" class="additional-information-button additional-information-button-current" type="button">доставка</a>
           </li>
           <li class="additional-information-item">
-            <button class="additional-information-button" type="button">гарантия</button>
+            <a href="#" class="additional-information-button" type="button">гарантия</a>
           </li>
           <li class="additional-information-item">
-            <button class="additional-information-button" type="button">кредит</button>
+            <a href="#" class="additional-information-button" type="button">кредит</a>
           </li>
         </ul>
-        <span class="visually-hidden additional-information-visual-line">Декоративная линия</span> <!--Я так понимаю, что линию сверстать надо отдельно спаном-->
+        <span class="visually-hidden additional-information-visual-line">Декоративная линия</span>
         <h3 class="additional-information-title">доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо<br>
           к вашему подъезду совершенно бесплатно! Ведь<br>
@@ -146,10 +139,8 @@
         <h3 class="visually-hidden">кредит</h3>
         <footer class="additional-information-footer">
           <h3 class="visually-hidden">редкий товар</h3>
-          <img href="#" class="additional-information-footer-image">
+          <img src="" class="additional-information-footer-image">
           <p class="additional-information-footer-text">Доставим редкий товар под заказ</p> 
-          <!--Я так понимаю этот текст будет некликабельный, то есть он не будет ссылкой, 
-          зато значок i справа будет ссылкой-->
           <a href="#" class="additional-information-footer-link">
             <span class="visually-hidden">Узнать больше</span>
           </a>
@@ -205,12 +196,11 @@
       </section>
       <section class="footer-adress">
         <h2 class="visually-hidden">Адрес</h2>
-        <img src="" class="footer-contacts-logo" alt="Магазин техники device"> <!--Как кавычки поставить/елочку вокруг названия?-->
-        <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p> <!--повторять тег adress не нужно?-->
+        <img src="" class="footer-contacts-logo" alt="Магазин техники device">
+        <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p> 
         <span class="visually-hidden footer-adress-visual-line">Декоративная линия</span>
       </section>
-      <section class="about-us-footer"> <!--Или лучше additional-information-footer, чтобы логически приравнивалось к тому,
-         что было в начале страницы? Или все же как название снизу в h2-->
+      <section class="about-us-footer"> 
         <h2 class="visually-hidden">О нас</h2>
         <ul class="about-us-footer-list">
           <li class="about-us-footer-item">
