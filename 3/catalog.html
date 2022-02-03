@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1824919-device-33/3/">
+</head>
+  <body>
+    <header class="page-header">
+      <a>
+        <img class="page-header-logo" src="" alt="логотип сайта device">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <form action="https://echo.htmlacademy.ru/" method="get">
+            <input class="navigation-field" name="search" type="search" placeholder="Текст поиска" required>   
+            <button type="submit">поиск</button>
+            </form>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-user" href="#">Коля Петухов</a>
+          </li>
+          <li>
+            <a class="navigation-link navigation-user exit" href="#">Выйти</a>
+          </li>
+          <li class="navigation-item ">
+            <a class="navigation-link navigation-user" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-user" href="#">Корзина</a>
+          </li>
+        </ul >
+        <ul class="navigation-list ">
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">каталог товаров</a>
+          <span class="visually-hidden">Открыть каталог</span> <!--Надо ли здесь делать select и выпадающий список, только увидел в стайлгайде, что там есть перечень-->
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">гарантия</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">контакты</a>
+        </li>
+        </ul>
+       </nav>
+    </header>
+    <main class="mane-inner">
+      <header class="inner-header">
+        <h1 class="inner-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </header>
+      <section class="catalog-products">
+        <h2 class="catalog-title">Фильтр:</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость</legend>
+            <input class="control-input" type="range" step="1" max="5000" min="0"> <!--Тут будет range? Но как сделать, чтобы 2-ве двигающиеся точки были?-->
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">цвет</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="black" checked>
+                  Черный
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="white" checked>
+                  Белый
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="blue">
+                  Синий
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="red">
+                  Красный
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="bluetooth" value="yes" checked>
+                  Есть
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="bluetooth" value="no">
+                  Нет
+                </label>
+              </li>
+           </ul>
+          </fieldset>
+          <button type="submit" class="button">Показать</button>
+        </form>
+        <h2 class="catalog-title">Сортировка:</h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Популярное</option>
+          <option value="cheap">Дешевое</option>
+          <option value="expensive">Дорогое</option>
+        </select>
+        <ul class="select-control-list">
+        <li class="select-control-item">
+          <button class="button select-control-button" type="button"> <!--так правильно разметить эти две стрелочки вверх и вниз справа в сортировке?
+          Это кнопками будет сделано или надо ссылки, так как на действительной странице не все карточки собраны, это все равно считается действием на странице?-->
+            <span class="visually-hidden">Показать сверху</span>
+          </button>
+        </li>
+        <li class="select-control-item">
+          <button class="button select-control-button" type="button">
+            <span class="visually-hidden">Показать снизу</span>
+          </button>
+        </li>
+      </ul>
+      <ul class="product-list">
+        <h2 class="visually-hidden">Товары</h2>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="#" alt="Любительская
+            селфи-палка">
+            <h3 class="product-card-title">Любительская
+              селфи-палка</h3>
+            <b class="product-card-price">500 ₽</b>
+          </a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="#" alt="Профессиональная селфи-палка ">
+            <h3 class="product-card-title">Профессиональная селфи-палка </h3>
+            <b class="product-card-price">1 500 ₽</b>
+          </a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="#" alt="Непотопляемая
+            селфи-палка">
+            <h3 class="product-card-title">Непотопляемая
+              селфи-палка</h3>
+            <b class="product-card-price">2 500 ₽</b>
+          </a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="#" alt="Селфи-палка «Следуй за мной»">
+            <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+            <b class="product-card-price">1 500 ₽</b>
+          </a>
+        </li>
+      </ul>
+      <button class="button button-pagination-show-more" type="button">загрузить ещё</button>
+      <ul class="pagination">
+        <li class="pagination-item"><!--По макету непонятно, на какой странице мы находимся. Если на первой, то pagination-prev надо еще и делать disabled>-->
+          <a class="pagination-link pagination-prev" disabled>назад</a>
+        </li>
+        <li class="pagination-item"><!--Надо разметить все 15 страниц и после 3 страницы троеточие?
+        и надо ли visually-hidden ставить тем, которые в промежутке после 3, но до 15-->
+          <a class="pagination-link" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <span class="pagination-short">...</span>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">5</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">6</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">7</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">8</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">9</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">11</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">12</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">13</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">14</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#" >15</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-prev" href="#">вперёд</a>
+        </li>
+      </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="newsletter">
+          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <p class="newsletter-information">Еженедельный дайджест с обзорами новинок,<br>
+            длительными тест-драйвами, распаковками, а также акции, <br>
+            спецпредложения и вот это вот всё.</p>
+            <p class="newsletter-text"><span class="visually-hidden">Есть</span>Это бесплатно</p>
+        <form action="https://echo.htmlacademy.ru" class="newsletter-form">
+          <input type="email" class="field" placeholder="Ваш e-mail" name="newsletter-email" required>
+          <button type="submit" class="button newsletter-button">подписаться</button>
+        </form>
+      </section>
+      <section class="footer-adress">
+        <h2 class="visually-hidden">Адрес</h2>
+        <img src="" class="footer-contacts-logo" alt="Магазин техники device">
+        <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p> 
+        <span class="visually-hidden footer-adress-visual-line">Декоративная линия</span>
+      </section>
+      <section class="about-us-footer"> 
+        <h2 class="visually-hidden">О нас</h2>
+        <ul class="about-us-footer-list">
+          <li class="about-us-footer-item">
+            <a href="#" class="about-us-footer-link">доставка</a>
+          </li>
+          <li class="about-us-footer-item">
+            <a href="#" class="about-us-footer-link">гарантия</a>
+          </li>
+          <li class="about-us-footer-item">
+            <a href="#" class="about-us-footer-link">контакты</a> 
+          </li>
+        </ul>
+      </section>
+      <section class="social-footer">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-footer-list">
+          <li class="social-footer-item">
+            <a href="#" class="button social-button">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-footer-item">
+            <a href="#" class="button social-button">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social-footer-item">
+            <a href="#" class="button social-button">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts-footer">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts-footer-text">Тел.: <a class="contacts-footer-phone" href="tel:88128121212"> +7 (812) 812-12-12</a></p>
+      <a class="htmlacademy-link"><img class="htmlacademy-logo" src="" href="https://htmlacademy.ru/" alt=".html academy"></a>
+      </section>
+    </footer>
+  </body>
+</html>
