@@ -131,8 +131,7 @@
         </select>
         <ul class="select-control-list">
         <li class="select-control-item">
-          <button class="button select-control-button" type="button"> <!--так правильно разметить эти две стрелочки вверх и вниз справа в сортировке?
-          Это кнопками будет сделано или надо ссылки, так как на действительной странице не все карточки собраны, это все равно считается действием на странице?-->
+          <button class="button select-control-button" type="button">
             <span class="visually-hidden">Показать сверху</span>
           </button>
         </li>
@@ -142,8 +141,8 @@
           </button>
         </li>
       </ul>
+      <h2 class="visually-hidden">Товары</h2>
       <ul class="product-list">
-        <h2 class="visually-hidden">Товары</h2>
         <li class="product-card">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="#" alt="Любительская
@@ -179,11 +178,10 @@
       </ul>
       <button class="button button-pagination-show-more" type="button">загрузить ещё</button>
       <ul class="pagination">
-        <li class="pagination-item"><!--По макету непонятно, на какой странице мы находимся. Если на первой, то pagination-prev надо еще и делать disabled>-->
-          <a class="pagination-link pagination-prev" disabled>назад</a>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-prev">назад</a>
         </li>
-        <li class="pagination-item"><!--Надо разметить все 15 страниц и после 3 страницы троеточие?
-        и надо ли visually-hidden ставить тем, которые в промежутке после 3, но до 15-->
+        <li class="pagination-item"> 
           <a class="pagination-link" href="#">1</a>
         </li>
         <li class="pagination-item">
