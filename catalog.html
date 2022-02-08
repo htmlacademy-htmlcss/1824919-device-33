@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -49,7 +50,7 @@
     </header>
     <main class="mane-inner">
       <header class="inner-header">
-        <h1 class="inner-title">Моноподы для селфи</h1>
+        <h1 class="inner-title title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -63,7 +64,7 @@
         </ul>
       </header>
       <section class="catalog-products">
-        <h2 class="catalog-title">Фильтр:</h2>
+        <h2 class="catalog-title title">Фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
@@ -123,7 +124,7 @@
           </fieldset>
           <button type="submit" class="button">Показать</button>
         </form>
-        <h2 class="catalog-title">Сортировка:</h2>
+        <h2 class="catalog-title title">Сортировка:</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярное</option>
           <option value="cheap">Дешевое</option>
@@ -131,14 +132,14 @@
         </select>
         <ul class="select-control-list">
         <li class="select-control-item">
-          <button class="button select-control-button" type="button">
+          <a href="#" class="select-control-button">
             <span class="visually-hidden">Показать сверху</span>
-          </button>
+          </a>
         </li>
         <li class="select-control-item">
-          <button class="button select-control-button" type="button">
+          <a href="#" class="select-control-button">
             <span class="visually-hidden">Показать снизу</span>
-          </button>
+          </a>
         </li>
       </ul>
       <h2 class="visually-hidden">Товары</h2>
