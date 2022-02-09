@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <a>
-        <img class="page-header-logo" src="" alt="логотип сайта device">
+        <img class="page-header-logo" width="145px" height="36px" src="images/logo.svg" alt="логотип сайта device">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -49,7 +50,7 @@
     </header>
     <main class="mane-inner">
       <header class="inner-header">
-        <h1 class="inner-title">Моноподы для селфи</h1>
+        <h1 class="inner-title title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -63,7 +64,7 @@
         </ul>
       </header>
       <section class="catalog-products">
-        <h2 class="catalog-title">Фильтр:</h2>
+        <h2 class="catalog-title title">Фильтр:</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
@@ -123,7 +124,7 @@
           </fieldset>
           <button type="submit" class="button">Показать</button>
         </form>
-        <h2 class="catalog-title">Сортировка:</h2>
+        <h2 class="catalog-title title">Сортировка:</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярное</option>
           <option value="cheap">Дешевое</option>
@@ -131,22 +132,21 @@
         </select>
         <ul class="select-control-list">
         <li class="select-control-item">
-          <button class="button select-control-button" type="button"> <!--так правильно разметить эти две стрелочки вверх и вниз справа в сортировке?
-          Это кнопками будет сделано или надо ссылки, так как на действительной странице не все карточки собраны, это все равно считается действием на странице?-->
+          <a href="#" class="select-control-button">
             <span class="visually-hidden">Показать сверху</span>
-          </button>
+          </a>
         </li>
         <li class="select-control-item">
-          <button class="button select-control-button" type="button">
+          <a href="#" class="select-control-button">
             <span class="visually-hidden">Показать снизу</span>
-          </button>
+          </a>
         </li>
       </ul>
+      <h2 class="visually-hidden">Товары</h2>
       <ul class="product-list">
-        <h2 class="visually-hidden">Товары</h2>
         <li class="product-card">
-          <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Любительская
+          <a class="product-card-link" href="#">  <!--Почему не работают размеры?-->
+            <img class="product-card-image" src="images/product-1.jpg" width="360px" height="380px" alt="Любительская
             селфи-палка">
             <h3 class="product-card-title">Любительская
               селфи-палка</h3>
@@ -155,14 +155,14 @@
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Профессиональная селфи-палка ">
+            <img class="product-card-image" src="images/product-2.jpg"  width="360px" height="380px" alt="Профессиональная селфи-палка ">
             <h3 class="product-card-title">Профессиональная селфи-палка </h3>
             <b class="product-card-price">1 500 ₽</b>
           </a>
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Непотопляемая
+            <img class="product-card-image" src="images/product-3.jpg"  width="360px" height="380px" alt="Непотопляемая
             селфи-палка">
             <h3 class="product-card-title">Непотопляемая
               селфи-палка</h3>
@@ -171,7 +171,7 @@
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Селфи-палка «Следуй за мной»">
+            <img class="product-card-image" src="images/product-4.jpg"  width="360px" height="380px" alt="Селфи-палка «Следуй за мной»">
             <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
             <b class="product-card-price">1 500 ₽</b>
           </a>
@@ -179,11 +179,10 @@
       </ul>
       <button class="button button-pagination-show-more" type="button">загрузить ещё</button>
       <ul class="pagination">
-        <li class="pagination-item"><!--По макету непонятно, на какой странице мы находимся. Если на первой, то pagination-prev надо еще и делать disabled>-->
-          <a class="pagination-link pagination-prev" disabled>назад</a>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-prev">назад</a>
         </li>
-        <li class="pagination-item"><!--Надо разметить все 15 страниц и после 3 страницы троеточие?
-        и надо ли visually-hidden ставить тем, которые в промежутке после 3, но до 15-->
+        <li class="pagination-item"> 
           <a class="pagination-link" href="#">1</a>
         </li>
         <li class="pagination-item">
@@ -251,7 +250,7 @@
       </section>
       <section class="footer-adress">
         <h2 class="visually-hidden">Адрес</h2>
-        <img src="" class="footer-contacts-logo" alt="Магазин техники device">
+        <img src="images/logo-footer.svg" width="145px" height="36px" class="footer-contacts-logo" alt="Магазин техники device">
         <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p> 
         <span class="visually-hidden footer-adress-visual-line">Декоративная линия</span>
       </section>
@@ -292,7 +291,7 @@
       <section class="contacts-footer">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts-footer-text">Тел.: <a class="contacts-footer-phone" href="tel:88128121212"> +7 (812) 812-12-12</a></p>
-      <a class="htmlacademy-link"><img class="htmlacademy-logo" src="" href="https://htmlacademy.ru/" alt=".html academy"></a>
+      <a class="htmlacademy-link"><img class="htmlacademy-logo" width="115px" height="33px" src="images/logo-academy.svg" href="https://htmlacademy.ru/" alt=".html academy"></a>
       </section>
     </footer>
   </body>
