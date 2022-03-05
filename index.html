@@ -21,13 +21,13 @@
             </form>
           </li>
           <li class="navigation-item navigation-user enter">
-            <a class="navigation-link navigation-user" href="#">Войти</a>
+            <a class="navigation-link navigation-user a" href="#">Войти</a>
           </li>
           <li class="navigation-item navigation-user">
-            <a class="navigation-link navigation-user" href="#">Сравнить</a>
+            <a class="navigation-link navigation-user a" href="#">Сравнить</a>
           </li>
           <li class="navigation-item navigation-user">
-            <a class="navigation-link navigation-user" href="#">Корзина</a>
+            <a class="navigation-link navigation-user a" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="navigation-list non-user-container">
@@ -48,57 +48,63 @@
       </div>
     </header>
     <main class="main-container main-page"> 
-        <section class="product-examples">       
-          <div class="product-examples-image">
-            <button class="slider-button button-prev">
-              <span class="visually-hidden">Предыдущий товар</span>
-            </button>
-            <img class="slider-image" width="300px" height="300px" src="images/quadcopter-image.png" alt="Квадракоптер">
-            <button class="slider-button button-next">
-              <span class="visually-hidden">Следующий товар</span>
-            </button>
-          </div>
-          <div class="product-examples-content">
+        <section class="product-examples"> 
+          <div class="product-examples-numeration-container">
             <b class="product-examples-numeration">01</b>
-            <h2 class="visually-hidden">Примеры товаров</h2>
-            <p class="slider-title title">Порхает как бабочка, <br>
-              жалит как пчела!</p>
-            <p class="slider-information">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
-              мощным лазером, замаскированным под стандартную камеру.</p> 
-              <div class="product-examples-pagination">
-                <a class="slider-details button" href="#">подробнее</a>
-              <ol class="slider-pagination">
-                <li class="slider-item">
-                  <button class="slider-pagination-button slider-pagination-button-current">
-                    <span class="visually-hidden">1 товар</span>
-                  </button>
-                </li>
-                <li class="slider-item">
-                  <button class="slider-pagination-button">
-                    <span class="visually-hidden">2 товар</span>
-                  </button>
-                </li>
-                <li class="slider-item">
-                  <button class="slider-pagination-button">
-                    <span class="visually-hidden">3 товар</span>
-                  </button>
-                </li>
-              </ol>
-              </div>
-            <table class="product-details">
-              <tr class="product-description">
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-              <tr class="product-definition">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
-              </tr>
-              </table> 
+          </div>   
+          <div class="product-examples-container">
+            <div class="product-examples-image">
+              <button class="slider-button button-prev">
+                <span class="visually-hidden">Предыдущий товар</span>
+              </button>
+              <img class="slider-image" width="560px" height="560px" src="images/quadcopter-image.png" alt="Квадракоптер">
+              <button class="slider-button button-next">
+                <span class="visually-hidden">Следующий товар</span>
+              </button>
+            </div>
+            <div class="product-examples-content">
+              <h2 class="visually-hidden">Примеры товаров</h2>
+              <p class="slider-title title">Порхает как бабочка, <br>
+                жалит как пчела!</p>
+              <p class="slider-information">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+                мощным лазером, замаскированным под стандартную камеру.</p> 
+                <div class="product-examples-pagination">
+                  <a class="slider-details button" href="#">
+                    <span class="slider-details-text">подробнее</span>
+                  </a>
+                <ol class="slider-pagination">
+                  <li class="slider-item">
+                    <button class="slider-pagination-button slider-pagination-button-current">
+                      <span class="visually-hidden">1 товар</span>
+                    </button>
+                  </li>
+                  <li class="slider-item">
+                    <button class="slider-pagination-button">
+                      <span class="visually-hidden">2 товар</span>
+                    </button>
+                  </li>
+                  <li class="slider-item">
+                    <button class="slider-pagination-button">
+                      <span class="visually-hidden">3 товар</span>
+                    </button>
+                  </li>
+                </ol>
+                </div>
+              <table class="product-details">
+                <tr class="product-description">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr class="product-definition">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+                </table> 
+            </div>
           </div>
         </section>
       <section class="suggestions">
-        <!-- <h2 class="visually-hidden">Категории техники</h2> -->
+        <h2 class="visually-hidden">Категории техники</h2>
         <ul class="suggestions-list">
           <li class="suggestions-item">  <!--Надо ли здесь размеры задавать? И почему они не работают?--> <!--Я понял! Оно не изменяется, но место под него фиксируется пустое-->
             <img src="images/Suggestion-1.svg" width="160" height="160" class="suggestions-image" alt="Очки виртуальной реальности">
@@ -114,7 +120,7 @@
           </li>
           <li class="suggestions-item">
             <img src="images/Suggestion-4.svg" width="160" height="160" class="suggestions-image" alt="Фитнес-браслет">
-            <p class="suggestion-name">Фитнес браслеты</p>
+            <p class="suggestion-name">Фитнес-браслеты</p>
           </li>
           <li class="suggestions-item">
             <img src="images/Suggestion-5.svg" width="160" height="160" class="suggestions-image" alt="Умные часы">
@@ -128,7 +134,7 @@
       </section>
       <section class="additional-information">
         <div class="additional-information-container">
-          <!-- <h2 class="visually-hidden">дополнительные сведения</h2> -->
+          <h2 class="visually-hidden">дополнительные сведения</h2>
           <ul class="additional-information-list">
             <li class="additional-information-item">
               <a href="#" class=" button additional-information-button additional-information-button-current">доставка</a>
@@ -147,24 +153,28 @@
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
             <img src="images/man.svg" width="136px" height="164px" alt="Доставщик" class="additional-information-image">
-          <!-- <h3 class="visually-hidden">гарантия</h3>
-          <h3 class="visually-hidden">кредит</h3> -->
+          <h3 class="visually-hidden">гарантия</h3>
+          <h3 class="visually-hidden">кредит</h3>
         </div>
       </section>
       <footer class="additional-information-footer">
-        <!-- <h3 class="visually-hidden">редкий товар</h3> -->
-        <img src="images/track.svg" width="125px" height="100px" alt="грузовик" class="additional-information-footer-image">
-        <p class="additional-information-footer-text title">Доставим редкий товар под заказ</p> 
-        <a href="#" class="additional-information-footer-link">
+        <h3 class="visually-hidden">редкий товар</h3>
+        <div class="additional-information-footer-image-container">
+          <img src="images/track.svg" width="125px" height="100px" alt="грузовик" class="additional-information-footer-image">
+        </div>
+        <div class="additional-information-footer-text-container">
+         <p class="additional-information-footer-text title">Доставим редкий товар под заказ</p> 
+         <a href="#" class="additional-information-footer-link">
           <span class="visually-hidden">Узнать больше</span>
         </a>
+        </div>  
       </footer>
         <div class="about-us-container">
           <section class="about-us">
-            <!-- <span class="visually-hidden about-us-visual-line">Декоративная линия</span> -->
-            <h2 class="about-us- title">О нас</h2>
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <span class="visually-hidden about-us-visual-line">Декоративная линия</span>
+            <h2 class="about-us-title title">О нас</h2>
+            <p class="about-us-information">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="about-us-information">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
             <ul  class="about-us-list">
               <li class="about-us-item">
                 <a href="#" class="about-us-company">Меловые линии</a>
@@ -179,7 +189,7 @@
             <a href="#" class="button about-us-button">подробнее о нас</a>
           </section>
           <section class="contacts">
-            <!-- <span class="visually-hidden about-us-visual-line">Декоративная линия</span> -->
+            <span class="visually-hidden about-us-visual-line">Декоративная линия</span>
             <h2 class="contacts-title title">Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. <br>
               Заодно сможете проверить работоспособность покупки. </p>
