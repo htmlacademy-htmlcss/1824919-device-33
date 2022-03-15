@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+     <header class="page-header">
       <div class="header-container">
         <h1 class="visually-hidden" hidden>Магазин техники "device"</h1>
       <a class="navigation-logo" href="#">
@@ -17,10 +17,15 @@
       </a>
       <nav class="navigation">
         <ul class="navigation-list user-container">
-          <li class="navigation-item navigation-user">
-            <form action="https://echo.htmlacademy.ru/" method="get">
+          <li class="navigation-item navigation-user search-item">
+            <form  action="https://echo.htmlacademy.ru/" method="get">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" fill="black"/>
+                </svg>                
             <input class="header-navigation-field" name="search" type="search" placeholder="Текст поиска" required>   
-            <button type="submit">поиск</button>
+            <button type="submit" class="search-button">
+              <span class="search-button-text">Найти</span>
+            </button>
             </form>
           </li>
           <li class="navigation-item navigation-user enter">
@@ -111,10 +116,10 @@
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог товаров</a>
+            <a href="#" class="breadcrumbs-link">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
+            <a href="#" class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
         </ul>
         </div>
@@ -147,7 +152,7 @@
               </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">цвет</legend>
+              <legend class="catalog-filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -191,13 +196,15 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="bluetooth" value="yes" checked>
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
+                    <span class="control-mark"></span>
                     Есть
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="bluetooth" value="no">
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
+                    <span class="control-mark"></span>
                     Нет
                   </label>
                 </li>
@@ -219,11 +226,31 @@
           <ul class="select-control-list">
             <li class="select-control-item">
               <a href="#" class="select-control-button">
+                <svg class="select-control-button-icon" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_11478_2978)">
+                  <path d="M6 0L11.5 10H0.5" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_11478_2978">
+                  <rect width="11" height="10" fill="white" transform="translate(0.5)"/>
+                  </clipPath>
+                  </defs>
+                </svg>                                
                 <span class="visually-hidden">Показать сверху</span>
               </a>
             </li>
             <li class="select-control-item">
               <a href="#" class="select-control-button">
+                <svg width="12" height="10" class="select-control-button-icon" viewBox="0 0 12 10" fill="black" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_21345_318)">
+                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_21345_318">
+                  <rect width="11" height="10" fill="white" transform="translate(11.5 10) rotate(180)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                  
                 <span class="visually-hidden">Показать снизу</span>
               </a>
             </li>
@@ -237,6 +264,7 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/product-1.jpg" width="360px" height="380px" alt="Любительская
                 селфи-палка">
+                <span class="product-button">ПОДРОБНЕЕ</span>
                 <div class="product-card-information-container">
                   <h3 class="product-card-title">Любительская селфи-палка</h3>
                   <b class="product-card-price">500 ₽</b>
@@ -244,8 +272,9 @@
               </a>
             </li>
             <li class="product-card">
-              <a class="product-card-link" href="#">
+              <a class="product-card-link product-card-link-news" href="#">
                 <img class="product-card-image" src="images/product-2.jpg"  width="360px" height="380px" alt="Профессиональная селфи-палка ">
+                <span class="product-button">ПОДРОБНЕЕ</span>
                 <div class="product-card-information-container">
                   <h3 class="product-card-title">Профессиональная селфи-палка </h3>
                   <b class="product-card-price">1 500 ₽</b>
@@ -256,6 +285,7 @@
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/product-3.jpg"  width="360px" height="380px" alt="Непотопляемая
                 селфи-палка">
+                <span class="product-button">ПОДРОБНЕЕ</span>
                 <div class="product-card-information-container">
                   <h3 class="product-card-title">Непотопляемая
                     селфи-палка</h3>
@@ -266,6 +296,7 @@
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="images/product-4.jpg"  width="360px" height="380px" alt="Селфи-палка «Следуй за мной»">
+                <span class="product-button">ПОДРОБНЕЕ</span>
                 <div class="product-card-information-container">
                   <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                   <b class="product-card-price">1 500 ₽</b>

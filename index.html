@@ -17,10 +17,15 @@
       </a>
       <nav class="navigation">
         <ul class="navigation-list user-container">
-          <li class="navigation-item navigation-user">
-            <form action="https://echo.htmlacademy.ru/" method="get">
+          <li class="navigation-item navigation-user search-item">
+            <form  action="https://echo.htmlacademy.ru/" method="get">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" fill="black"/>
+                </svg>                
             <input class="header-navigation-field" name="search" type="search" placeholder="Текст поиска" required>   
-            <button type="submit">поиск</button>
+            <button type="submit" class="search-button">
+              <span class="search-button-text">Найти</span>
+            </button>
             </form>
           </li>
           <li class="navigation-item navigation-user enter">
@@ -106,7 +111,7 @@
         <section class="product-examples-current"> 
           <div class="product-examples-numeration-container">
             <b class="product-examples-numeration">01</b>
-          </div>   
+          </div>
           <div class="product-examples-container">
             <div class="product-examples-image">
               <img class="slider-image" width="560px" height="560px" src="images/quadcopter-image.png" alt="Квадракоптер">
@@ -137,12 +142,12 @@
                   </a>
                 <ol class="slider-pagination">
                   <li class="slider-item">
-                    <button class="slider-pagination-button">
+                    <button class="slider-pagination-button slider-pagination-button-current">
                       <span class="visually-hidden">1 товар</span>
                     </button>
                   </li>
                   <li class="slider-item">
-                    <button class="slider-pagination-button  slider-pagination-button-current">
+                    <button class="slider-pagination-button">
                       <span class="visually-hidden">2 товар</span>
                     </button>
                   </li>
@@ -503,7 +508,7 @@
            <form action="https://echo.htmlacademy.ru" class="newsletter-form">
              <input type="email" class="field" placeholder="Ваш e-mail" name="newsletter-email" required>
              <button type="submit" class="newsletter-button">подписаться</button>
-           </form>
+           </form>  
            <p class="newsletter-text">
              <svg class="newsletter-text-icon" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.498 1L5.89805 10.3L1.49805 6V10.7L5.99805 15L15.498 5.7V1Z" fill="#08AF00"/>
