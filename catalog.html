@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-     <header class="page-header">
+    <header class="page-header">
       <div class="header-container">
         <h1 class="visually-hidden" hidden>Магазин техники "device"</h1>
       <a class="navigation-logo" href="#">
@@ -32,14 +32,15 @@
             <a class="navigation-link navigation-user-link login" href="#">
               <svg width="15" height="13" class="navigation-icon" aria-hidden="true" focusable="false"  viewBox="0 0 15 13" fill="#000" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M1 12.787h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S4 2.387 4 4.287c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z"/>
               </g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .787)" d="M0 0h15v12H0z"/></clipPath></defs></svg>
-              Войти</a>
+              Коля Петухов</a>
+              <a class="navigation-link navigation-user-link exit" href="#">Выйти</a>
           </li>
-          <li class="navigation-item navigation-user">
+          <li class="navigation-item navigation-user compare-item">
             <a class="navigation-link navigation-user-link compare" href="#">
               <svg width="10" height="13" viewBox="0 0 10 13" class="navigation-icon" aria-hidden="true" focusable="false" fill="#000" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M6 .787H4v12h2v-12ZM2 4.787H0v8h2v-8ZM10 3.787H8v9h2v-9Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .787)" d="M0 0h10v12H0z"/></clipPath></defs></svg>
               Сравнить</a>
           </li>
-          <li class="navigation-item navigation-user">
+          <li class="navigation-item basket-item navigation-user">
             <a class="navigation-link navigation-user-link basket" href="#">
               <svg width="31" height="22" class="navigation-icon" viewBox="0 0 31 22" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_11503_3437)">
@@ -54,12 +55,52 @@
                 </defs>
                 </svg>                
               Корзина</a>
+              <div class="popover popover-cart">         <!--сделать popover{display: block;}-->       
+                <div class="popover-content">
+                  <h2 class="popover-title visually-hidden">Корзина</h2>
+                  <ul class="cart-items-list">
+                      <li class="cart-item">
+                      <a href="#" class="cart-item-link">
+                        <img class="cart-item-image" width="39px" height="43px" src="images/small-product-1.jpg">
+                        <p class="cart-item-title">Любительская <br> селфи-палка</p>
+                      </a>
+                        <button type="button" class="cart-item-button button">
+                          <svg width="10" height="11" class="close-icon" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
+                            </svg>                            
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <a href="#" class="cart-item-link">
+                        <img class="cart-item-image" width="39px" height="43px" src="images/small-product-2.jpg">
+                        <p class="cart-item-title">Профессиональная <br>селфи-палка</p>
+                      </a>
+                        <button class="cart-item-button button" type="button">
+                          <svg width="10" height="11" class="close-icon"  viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
+                            </svg>                            
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="popover-information">
+                      <p class="popover-information-quantity">Товаров: 2</p>
+                      <p class="popover-information-cost">Сумма: 2000 ₽</p>
+                    </div>
+                    <div class="popover-button-container">
+                      <button class="popover-button">
+                        <span class="popover-button-text">открыть корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
           </li>
         </ul>
         <ul class="navigation-list non-user-container">
           <li class="navigation-item catalog">
             <a class="catalog-link navigation-link" href="catalog.html">
-              <span class="catalog-link-text">каталог товаров</span>
+              <span class="catalog-link-text">каталог товаров</span>    <!--catalog-icon-current добавить свгшке, чтобы поменять плюс на минус-->
               <svg   class="catalog-icon-current" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="24" stroke="black" stroke-width="2"/>
                 <g>
@@ -81,7 +122,7 @@
                 <a class="subtitle" href="#">Фитнес-браслеты</a>
               </li>
               <li class="catalog-item">
-                <a class="subtitle subtitle-current" href="#">Квадрокоптеры</a>
+                <a class="subtitle subtitle-current" href="#">Квадрокоптеры</a> <!--для изменения активного состояния и подчеркивания добавлять subtitle-current --> 
               </li>
               <li class="catalog-item">
                 <a class="subtitle" href="#">Моноподы для селфи</a>
@@ -95,7 +136,7 @@
             </ul>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-current navigation-link" href="#">доставка</a>
+            <a class="navigation-link navigation-link" href="#">доставка</a>  <!--navigation-link-current добавить для активного состояния-->
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">гарантия</a>
@@ -110,7 +151,7 @@
     <main class="main-inner">
       <header class="inner-header">
         <div class="inner-header-container">
-          <h1 class="inner-title title">Моноподы для селфи</h1>
+          <h2 class="inner-title title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -219,7 +260,7 @@
          <div class="filter-container">
           <h2 class="catalog-title title">Сортировка:</h2>
           <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Популярное</option>
+            <option value="popular">Популярные</option>
             <option value="cheap">Дешевое</option>
             <option value="expensive">Дорогое</option>
           </select>
@@ -266,14 +307,14 @@
                 селфи-палка">
                 <span class="product-button">ПОДРОБНЕЕ</span>
                 <div class="product-card-information-container">
-                  <h3 class="product-card-title">Любительская селфи-палка</h3>
+                  <h3 class="product-card-title">Любительская <br> селфи-палка</h3>
                   <b class="product-card-price">500 ₽</b>
               </div>
               </a>
             </li>
             <li class="product-card">
-              <a class="product-card-link product-card-link-news" href="#">
-                <img class="product-card-image" src="images/product-2.jpg"  width="360px" height="380px" alt="Профессиональная селфи-палка ">
+              <a class="product-card-link product-card-link-new" href="#">   <!--product-card-link-new добавить если товар новый-->
+                <img class="product-card-image" src="images/product-4.jpg"  width="360px" height="380px" alt="Профессиональная селфи-палка ">
                 <span class="product-button">ПОДРОБНЕЕ</span>
                 <div class="product-card-information-container">
                   <h3 class="product-card-title">Профессиональная селфи-палка </h3>
@@ -295,7 +336,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/product-4.jpg"  width="360px" height="380px" alt="Селфи-палка «Следуй за мной»">
+                <img class="product-card-image" src="images/product-2.jpg"  width="360px" height="380px" alt="Селфи-палка «Следуй за мной»">
                 <span class="product-button">ПОДРОБНЕЕ</span>
                 <div class="product-card-information-container">
                   <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
@@ -306,12 +347,14 @@
           </ul>
             </div>
           <div class="catalog-button-container">
-            <button class="button button-pagination-show-more" type="button">загрузить ещё</button>
+            <button class="button button-pagination-show-more" type="button">
+              <span class="button-pagination-text">загрузить ещё</span>
+            </button>
           </div>
           <div class="pagination-container">
             <ul class="pagination">
               <li class="pagination-item-button">
-                <a href="#" class=" button pagination-link-button pagination-prev">назад</a>
+                <a href="#" class="button pagination-link-button pagination-prev">назад</a>
               </li>
               <li class="pagination-item"> 
                 <a class="pagination-link" href="#">1</a>
@@ -352,7 +395,7 @@
             <path d="M83.4 0V10.1L91 0H83.4Z" fill="#FFC700"/>
             </svg>
           </a>
-          <p class="contacts-adress-text adress-footer-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p> 
+          <p class="contacts-adress-text adress-footer-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p> 
           <span class="visually-hidden footer-adress-visual-line">Декоративная линия</span>
         </section>
         <div class="about-us-social-container">
