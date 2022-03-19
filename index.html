@@ -34,12 +34,12 @@
               </g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .787)" d="M0 0h15v12H0z"/></clipPath></defs></svg>
               Войти</a>
           </li>
-          <li class="navigation-item navigation-user">
+          <li class="navigation-item navigation-user compare-item">
             <a class="navigation-link navigation-user-link compare" href="#">
               <svg width="10" height="13" viewBox="0 0 10 13" class="navigation-icon" aria-hidden="true" focusable="false" fill="#000" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M6 .787H4v12h2v-12ZM2 4.787H0v8h2v-8ZM10 3.787H8v9h2v-9Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .787)" d="M0 0h10v12H0z"/></clipPath></defs></svg>
               Сравнить</a>
           </li>
-          <li class="navigation-item navigation-user">
+          <li class="navigation-item basket-item navigation-user">
             <a class="navigation-link navigation-user-link basket" href="#">
               <svg width="31" height="22" class="navigation-icon" viewBox="0 0 31 22" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_11503_3437)">
@@ -54,12 +54,52 @@
                 </defs>
                 </svg>                
               Корзина</a>
+              <div class="popover popover-cart">         <!--сделать popover{display: block;}-->       
+                <div class="popover-content">
+                  <h2 class="popover-title visually-hidden">Корзина</h2>
+                  <ul class="cart-items-list">
+                      <li class="cart-item">
+                      <a href="#" class="cart-item-link">
+                        <img class="cart-item-image" width="39px" height="43px" src="images/small-product-1.jpg">
+                        <p class="cart-item-title">Любительская <br> селфи-палка</p>
+                      </a>
+                        <button type="button" class="cart-item-button button">
+                          <svg width="10" height="11" class="close-icon" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
+                            </svg>                            
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <a href="#" class="cart-item-link">
+                        <img class="cart-item-image" width="39px" height="43px" src="images/small-product-2.jpg">
+                        <p class="cart-item-title">Профессиональная <br>селфи-палка</p>
+                      </a>
+                        <button class="cart-item-button button" type="button">
+                          <svg width="10" height="11" class="close-icon"  viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
+                            </svg>                            
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="popover-information">
+                      <p class="popover-information-quantity">Товаров: 2</p>
+                      <p class="popover-information-cost">Сумма: 2000 ₽</p>
+                    </div>
+                    <div class="popover-button-container">
+                      <button class="popover-button">
+                        <span class="popover-button-text">открыть корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
           </li>
         </ul>
         <ul class="navigation-list non-user-container">
           <li class="navigation-item catalog">
             <a class="catalog-link navigation-link" href="catalog.html">
-              <span class="catalog-link-text">каталог товаров</span>
+              <span class="catalog-link-text">каталог товаров</span>    <!--catalog-icon-current добавить свгшке, чтобы поменять плюс на минус-->
               <svg   class="catalog-icon-current" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="24" stroke="black" stroke-width="2"/>
                 <g>
@@ -81,7 +121,7 @@
                 <a class="subtitle" href="#">Фитнес-браслеты</a>
               </li>
               <li class="catalog-item">
-                <a class="subtitle subtitle-current" href="#">Квадрокоптеры</a>
+                <a class="subtitle subtitle-current" href="#">Квадрокоптеры</a> <!--для изменения активного состояния и подчеркивания добавлять subtitle-current --> 
               </li>
               <li class="catalog-item">
                 <a class="subtitle" href="#">Моноподы для селфи</a>
@@ -95,7 +135,7 @@
             </ul>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-current navigation-link" href="#">доставка</a>
+            <a class="navigation-link navigation-link" href="#">доставка</a>  <!--navigation-link-current добавить для активного состояния-->
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">гарантия</a>
@@ -108,7 +148,7 @@
       </div>
     </header>
     <main class="main-container main-page"> 
-        <section class="product-examples-current"> 
+        <section class="product-examples product-examples-current">  <!-- добавлять product-examples-current для изменения слайдера-->
           <div class="product-examples-numeration-container">
             <b class="product-examples-numeration">01</b>
           </div>
@@ -160,8 +200,8 @@
                 </div>
               <table class="product-details">
                 <tr class="product-description">
-                  <td>800 м</td>
-                  <td>50 м</td>
+                  <th>800 м</th>
+                  <th>50 м</th>
                 </tr>
                 <tr class="product-definition">
                   <td>Дальность полета</td>
@@ -171,7 +211,7 @@
             </div>
           </div>
         </section>
-        <section class="product-examples"> 
+        <section class="product-examples "> 
           <div class="product-examples-numeration-container">
             <b class="product-examples-numeration">02</b>
           </div>   
@@ -222,7 +262,7 @@
                 </div>
               <table class="product-details">
                 <tr class="product-description">
-                  <td>48 часов</td>
+                  <th>48 часов</th>
                 </tr>
                 <tr class="product-definition">
                   <td>Без подзарядки</td>
@@ -284,9 +324,9 @@
                 </div>
               <table class="product-details">
                 <tr class="product-description">
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
+                  <th>8,5 м</th>
+                  <th>5 кг</th>
+                  <th>Карбон</th>
                 </tr>
                 <tr class="product-definition">
                   <td>Длина палки</td>
@@ -321,7 +361,7 @@
                   <path d="M46.608 64.861V61.888H54.654V59.13H31.498V61.888H39.543V97.134C37.404 98.072 35.908 100.206 35.908 102.693V117H50.243V102.693C50.243 100.207 48.748 98.072 46.607 97.136V69.146H51.403L56.454 70.359V63.648L51.403 64.861H46.608Z" fill="#363636"/>
                   </svg>
             </div>
-            <p class="suggestion-name">Моноподы для селфи</p>
+            <p class="suggestion-name">Моноподы <br> для селфи</p>
           </a>
           </li>
           <li class="suggestions-item">
@@ -388,22 +428,22 @@
           <h2 class="visually-hidden">дополнительные сведения</h2>
           <ul class="additional-information-list">
             <li class="additional-information-item">
-              <a href="#" class="button additional-information-button  main-button">
+              <a href="#" class="button additional-information-button  additional-information-button-current  main-button">
                 <span class="additional-information-button-text">доставка</span>
               </a>
             </li>
             <li class="additional-information-item">
-              <a href="#" class="additional-information-button   additional-information-button-current main-button button">
+              <a href="#" class="additional-information-button  main-button button">
                 <span class="additional-information-button-text">гарантия</span>
               </a>
             </li>
             <li class="additional-information-item">
-              <a href="#" class="additional-information-button main-button button">
+              <a href="#" class="additional-information-button main-button button"> <!-- для изменения дизайна кнопки добавлять additional-information-button-current -->
                 <span class="additional-information-button-text">кредит</span>
                 </a>
             </li>
           </ul>
-          <div class="additional-information-content-container">
+          <div class="additional-information-content-container-current additional-information-content-container"> <!-- добавлять для изменения секций additional-information-content-container-current-->
             <div class="additional-information-text">
               <h3 class="title additional-information-title">Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо<br>
@@ -412,7 +452,7 @@
             </div>
             <img src="images/man.svg" width="136px" height="164px" alt="Доставщик" class="additional-information-image-man">
           </div>
-            <div class="additional-information-content-container-current">
+            <div class="additional-information-content-container">
               <div class="additional-information-text">
               <h3 class="title additional-information-title">Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас
@@ -460,7 +500,7 @@
           <section class="about-us">
             <span class="visually-hidden about-us-visual-line">Декоративная линия</span>
             <h2 class="about-us-title title">О нас</h2>
-            <p class="about-us-information">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="about-us-information">Огромный выбор гаджетов не оставит равнодушным <br> гика, который есть в каждом из нас.</p>
             <p class="about-us-information">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
             <ul  class="about-us-list">
               <li class="about-us-item">
@@ -501,12 +541,12 @@
     <footer class="page-footer">
       <div class="newsletter-container">
         <section class="newsletter">
-           <h2 class="newsletter-title title">Подпишитесь на рассылку</h2>
+           <h2 class="newsletter-title title">Подпишитесь <br> на рассылку</h2>
            <p class="newsletter-information">Еженедельный дайджест с обзорами новинок,<br>
             длительными тест-драйвами, распаковками, а также акции, <br>
             спецпредложения и вот это вот всё.</p>
            <form action="https://echo.htmlacademy.ru" class="newsletter-form">
-             <input type="email" class="field" placeholder="Ваш e-mail" name="newsletter-email" required>
+             <input type="email" class="newsletter-form-field field" placeholder="Ваш e-mail" name="newsletter-email" required>
              <button type="submit" class="newsletter-button">подписаться</button>
            </form>  
            <p class="newsletter-text">
@@ -530,7 +570,7 @@
             <path d="M83.4 0V10.1L91 0H83.4Z" fill="#FFC700"/>
             </svg>
           </a>
-          <p class="contacts-adress-text adress-footer-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p> 
+          <p class="contacts-adress-text adress-footer-text">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</p> 
           <span class="visually-hidden footer-adress-visual-line">Декоративная линия</span>
         </section>
         <div class="about-us-social-container">
@@ -558,7 +598,7 @@
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="social-footer-list">
               <li class="social-footer-item">
-                <a href="#" class="social-button">
+                <a href="https://www.facebook.com/htmlacademy" class="social-button">
                   <svg width="40" height="40" viewBox="0 0 40 40" class="social-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle class="circle" cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <path class="circle-icon" d="M22.5 14H25V11H21.6C18.8 11 18 12.7 18 15.2V17H16V20H18V29H21V20H24.3L24.9 17H21V15.5C21 14.7 21.3 14 22.5 14Z" fill="#444444"/>
@@ -567,7 +607,7 @@
                 </a>
               </li>
               <li class="social-footer-item">
-                <a href="#" class="social-button">
+                <a href="https://www.instagram.com/htmlacademy" class="social-button">
                   <svg width="40" height="40" viewBox="0 0 40 40" class="social-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle class="circle" cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <path class="circle-icon" d="M20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22Z" fill="#444444"/>
@@ -577,7 +617,7 @@
                 </a>
               </li>
               <li class="social-footer-item">
-                <a href="#" class="social-button">
+                <a href="https://twitter.com/htmlacademy.ru" class="social-button">
                   <svg width="40" height="40" viewBox="0 0 40 40" class="social-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle class="circle" cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <path class="circle-icon" d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
@@ -611,5 +651,70 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container">  
+      <div class="modal modal-data">
+        <button class="modal-close-button">
+          <svg width="26" class="modal-close-button-icon" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z" fill="black"/>
+            </svg>            
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="data-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="field-group-label">
+                <span class="data-title">Ваше имя:</span>
+              <input class="data-form-field name-field field" type="text" name="name" placeholder="Введите имя" required>
+              <span class="field-text name">Добавьте имя</span>
+            </label> 
+            </p>
+            <p class="field-group">
+              <label class="field-group-label">
+                <span class="data-title">Ваш e-mail:</span>
+              <input class="data-form-field mail-field field" type="mail" name="mail" placeholder="Введите e-mail">
+              <span class="field-text">Забавный у вас адрес</span>
+            </label>
+            </p>
+            <p class="field-group">
+              <label class="field-group-label">
+                <span class="data-title">Что нужно привезти:</span>
+                <input class="data-form-field comment-field field" type="textfield" name="comment" placeholder="В свободной форме" required>
+              </label>
+            </p>
+            <div class="field-group">
+              <label class="field-group-label quantity-container">
+                <span class="data-title quantity-title">Количество:</span>
+                <a href="#" class="quantity-link">
+                  <svg width="26" class="quantity-icon" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
+                    <path d="M14 7H12V9H14V7Z" fill="black"/>
+                    <path d="M14 11H12V19H14V11Z" fill="black"/>
+                    </svg>    
+                </a>   
+                <div class="modal-tooltip">
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>
+к провозу багажа.
+                </div>           
+                <div class="quantity">
+                  <button class="button number-input data-form-button" type="button">
+                    <svg width="16" height="16" class="number-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 7H0V9H16V7Z" fill="black"/>
+                      </svg>                      
+                    </button>
+                  <input class="number-input" type="number" value="1" min="1"name="quantity" required>
+                <button class="button number-input data-form-button" type="button">
+                  <svg width="16" height="16" class="number-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                    </svg>
+                </button>
+                </div>
+              </label>
+            </div>
+            <button class="button data-form-button send-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
