@@ -75,9 +75,10 @@ body {
     line-height: 30px;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     color: #444444;
     background-color: #FFFFFF;
+    min-width: 1440px;
+    min-height: 100%;
 }
 
 .main-container {
@@ -203,9 +204,8 @@ body {
     display: grid;
     grid-template-columns: 222px 222px 222px;
     grid-template-rows: 40px 40px 40px;
-    height: 180px;
     position: absolute;
-    height: 180px;
+    min-height: 180px;
     top: 35px;
     left: -60px;
     padding: 33px 60px 27px;
@@ -531,7 +531,7 @@ body {
 
 .popover-information {
     width: 320px;
-    height: 44px;
+    min-height: 44px;
     display: flex;
     background-color: #1A1A1A;
 }
@@ -562,7 +562,7 @@ body {
 }
 
 .popover-button {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -858,13 +858,14 @@ body {
 
 .suggestions {
     margin: 0 auto;
-    margin-bottom: 172px;
+    margin-bottom: 102px;
     width: 1160px;
-    height: 253px;
+    min-height: 253px;
 }
 .suggestions-list {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
 }
@@ -875,7 +876,13 @@ body {
 .suggestions-item {
     margin-right: 40px;
     display: flex;
-    height: 253px;
+    min-height: 253px;
+    width: 160px;
+    margin-bottom: 70px;
+}
+
+.suggestions-item:nth-child(6n) {
+    margin-right: 0px;
 }
 
 .suggestion-icon-container {
@@ -915,6 +922,7 @@ body {
     margin-bottom: 0;
 }
 .suggestion-name {
+    display: block;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -933,7 +941,7 @@ body {
 }
 .additional-information {
     background-color: #F0F0F0;
-    height: 289px;
+    min-height: 289px;
     margin-bottom: 70px
 }
 
@@ -941,10 +949,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 1160px;
-    height: 319px;
+    min-height: 319px;
     margin: auto;
     margin-top: -102px;
-
 }
 
 .additional-information-list {
@@ -983,26 +990,30 @@ body {
     margin: auto;
     margin-right: 63px;
     margin-left: 83px;
+    margin-top: 77.5px;
 }
 
 .additional-information-image-guarantees {
     margin: auto;
     margin-right: 28px;
     margin-left: 83px;
+    margin-top: 77.5px;
 }
 
 .additional-information-image-credit {
     margin: auto;
     margin-right: 28px;
     margin-left: 98px;
+    margin-top: 77.5px;
 }
 
 .additional-information-text {
     display: flex;
     flex-direction: column; 
     width: 475px;
-    height: 174px;
+    min-height: 174px;
     margin: auto;
+    margin-top: 72.5px;
     margin-left: 0;
 }
 
@@ -1023,14 +1034,14 @@ body {
 .additional-information-footer {
     width: 1160px;
     margin: 0 auto;
-    height: 100px;
+    min-height: 100px;
     margin-bottom: 70px;
 }
 
 .additional-information-footer-container {
     display: flex;
     width: 1160px;
-    height: 100px;
+    min-height: 100px;
     margin: 0 auto;
     padding: 0;
 }
@@ -1093,7 +1104,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 1035px;
-    height: 100px;
+    min-height: 100px;
     background-color: #F0F0F0;
     padding-right: 125px;
     box-sizing: border-box;
@@ -1115,7 +1126,7 @@ body {
 .about-us-container {
     display: flex;
     width: 1160px;
-    height: 545px;
+    min-height: 545px;
     margin: 0 auto;
     margin-bottom: 70px;
 }
@@ -1204,14 +1215,13 @@ body {
 }
 .newsletter-container {
     margin: 0 auto;
-    height: 421px;
+    min-height: 421px;
     padding: 0;
     background-color: #F0F0F0;
 }
 .newsletter  {
     display: grid;
     grid-template-columns: 600px 290px 270px;
-    grid-template-rows: 164px 113px;
     row-gap: 144px;
     align-items: end;
 }
@@ -1308,6 +1318,7 @@ body {
 .newsletter-title {
     margin: 0;
     margin-left: 5px;
+    margin-top: 64px;
 }
 
 .page-footer {
@@ -1323,7 +1334,7 @@ body {
     grid-template-columns: 351px 444px 365px;
     background-color: #444444;
     margin: 0 auto;
-    height: 321px;
+    min-height: 321px;
 }
 
 .footer-adress {
@@ -1349,9 +1360,10 @@ body {
 .about-us-footer-list {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 134px;
-    margin-bottom: 57px;
+    margin-bottom: 0;
 }
 
 .contacts-footer {
@@ -1364,14 +1376,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-left: 154px;
-    justify-content: start;
+    justify-content: center;
     list-style-type: none;
     width: 440px;
 }
 
 .social-footer-item {
     margin-right: 11px;
+    margin-bottom: 60px;
 }
 
 .social-button {
@@ -1610,9 +1622,15 @@ body {
     display: block;
 }
 
-.about-us-footer-item:not(:last-child) {
-    margin-right: 26px;
+.about-us-footer-item {
+    margin-right: 23px;
+    margin-bottom: 57px;
 }
+
+.about-us-footer-item:nth-child(3n) {
+    margin-right: 0;
+}
+
 .contacts-adress-phone {
     color: #444444;
 }
@@ -1813,7 +1831,7 @@ body {
     z-index: 5;
     width: 220px;
     height: 40px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -2014,7 +2032,7 @@ body {
 }
 
 .inner-title {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -2068,7 +2086,7 @@ body {
 
 .product-card-information-container {
     display: flex;
-    height: 40px;
+    min-height: 40px;
 }
 .catalog-button-container {
     margin: 0 auto;
@@ -2122,7 +2140,7 @@ body {
 .filter-container {
     display: flex;
     width: 840px;
-    height: 70px;
+    min-height: 70px;
     flex-wrap: wrap;
     padding: 20px 0;
     box-sizing: border-box;
@@ -2146,7 +2164,7 @@ body {
     padding: 25px 0;
     box-sizing: border-box;
     display: block;
-    height: 69px;
+    min-height: 69px;
     margin-bottom: 43px;
     text-align: start;
 }
@@ -2175,6 +2193,9 @@ body {
     margin: auto 0;
     width: 30px;
     height: 30px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
 }
 
 .select-control-button:focus {
@@ -2202,7 +2223,7 @@ body {
     margin: 0 auto;
     width: 220px;
     height: 40px;
-  
+    background-color: transparent;
 }
 
 .filter-button-text {
@@ -2312,7 +2333,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-right: 5px;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -2449,11 +2470,11 @@ body {
     box-sizing: border-box;
     box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
     width: 920px;
-    height: 568px;
+    min-height: 568px;
 }
 
 .modal-title {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -2477,7 +2498,7 @@ body {
 }
 
 .data-title {
-    font-family: 'Rubik';
+    font-family: 'Rubik',  sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -2516,7 +2537,7 @@ body {
     background-color: #F0F0F0;
     border: none;
     appearance: textfield;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2558,7 +2579,7 @@ body {
     border: none;
     padding: 10px;
     box-sizing: border-box;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -2629,7 +2650,7 @@ body {
 }
 .data-form-field {
     width: 360px;
-    font-family: 'Rubik';
+    font-family: 'Rubik',  sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2663,7 +2684,7 @@ body {
 }
 
 .field-text {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2679,10 +2700,10 @@ body {
     display: none;
     position: absolute;
     width: 200px;
-    height: 166px;
+    min-height: 166px;
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     top: 33px;
     left: -20px;
